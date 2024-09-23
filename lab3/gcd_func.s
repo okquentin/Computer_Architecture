@@ -15,12 +15,12 @@ gcd:
     blt a0, a1, a1bigger # check if b>a
     sub t0, a0, a1 # subtract b from a since a>b
     add a0, x0, t0 #load difference into a since a>b
-    jal x0, gcd #loop
-
+    jal x0, gcd # loop until a=b
+    
 a1bigger:
     sub t0, a1, a0 # subtract a from b since b>a
     add a1, x0, t0 # load difference into b since b>a
-    jal x0, gcd #loop
+    jal x0, gcd # loop until a=b
 
 return:
     jr ra # return to main
