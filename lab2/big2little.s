@@ -47,4 +47,4 @@ wordswap: #s2 counter
     j wordswap
 
 done:
-    add x0, x0, x0
+    ret a0
