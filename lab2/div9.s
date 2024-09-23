@@ -1,4 +1,9 @@
-test: addi s0, zero, 19 # Loading register s0 with an integer value
+# div9.s
+# q-osterhage@onu.edu
+# September 2024
+# Description: returns 1 if a defined constant is divisible 9, else returns 0
+
+test: addi s0, zero, 19 # Loading register s0 with a constant integer value
 
 check:
     beq s0, zero, divisible

@@ -1,4 +1,8 @@
-# 8 words, start at 0x300
+# big2little.s
+# q-osterhage@onu.edu
+# September 2024
+# Description: converts a multi-word value (8 words, starting from 0x300)
+# from big endian to little endian
 
 addi s0, zero, 8 # word count of value
 addi s1, zero, 0x300 #Starting Address Location Pointer
