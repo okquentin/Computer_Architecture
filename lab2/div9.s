@@ -3,12 +3,12 @@
 # September 2024
 # Description: returns 1 if a defined constant is divisible 9, else returns 0
 
-test: addi s0, zero, 19 # Loading register s0 with a constant integer value
+test: addi a0, zero, 18 # Loading register a0 with a constant integer value
 
 check:
-    beq s0, zero, divisible
-    blt s0, zero, indivisible
-    addi s0, s0, -9 
+    beq a0, zero, divisible
+    blt a0, zero, indivisible
+    addi a0, a0, -9 
     j check
 
 divisible:
@@ -16,6 +16,7 @@ divisible:
     j done
 
 indivisible:
+    add a0, x0, x0
 
 done: 
     add x0 x0 x0
