@@ -17,7 +17,6 @@ initialize:
     addi s3, s3, 1 # increment value for next word
     addi s2, s2, 1 # increment counter
     blt s2, s0, initialize # check if counter is less than word count
-    
     # resetting values of t0, t1, and s2 to reuse them in wordswap
     add t0, x0, x0
     add t1, x0, x0
